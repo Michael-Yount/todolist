@@ -1,5 +1,23 @@
+body {
+  background-color: darkslategrey;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 1em .5em .5em rgba(0, 0, 0, 0.902);
+}
+
+.App-container {
+  display:block;
+}
+
+.App-list {
+  background-color: #103c49;
+  text-align: center;
+  color: rgb(255, 255, 249);
+}
+
 .App {
   text-align: center;
+  top: 50%;
 }
 
 .App-logo {
@@ -14,7 +32,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1e53bc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
