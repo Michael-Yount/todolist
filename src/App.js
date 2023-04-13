@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import TodoForm from './form';
+import Todo from './todo';
 
 function App(){
 
@@ -23,16 +25,30 @@ function App(){
   ]
   
   );
+  const addTodo = text => {
+    const newTodos = [...todos, {text:text, isCompleted:false}];
+    setTodos(newTodos);
+  }
+
+  const removeTodo = index => {
+    let temp = [...todos];
+    temp.splice(index, 1);
+    setTodos(temp);
+  }
+
+  
   
       return (
         
-        <div className='App-container'>
   <>
-    {todos.map((todo, i) => <div key={i} className='App-list'>{todo.text}</div>)}
-  </>
+  <div className='App-container'>
+    <div className='App-list'>
+    {todos.map((todo, i) => 
+    <Todo index={i} key={i} todo={todo} remove={removeTodo}/>)}
+    <TodoForm addTodo={addTodo}/>
     </div>
-  
-  );
+    </div>
+  </>);
 }
 
 

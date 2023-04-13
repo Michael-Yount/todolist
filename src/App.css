@@ -1,18 +1,46 @@
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: darkslategrey;
   text-align: center;
   color: aliceblue;
-  text-shadow: 1em .5em .5em rgba(0, 0, 0, 0.902);
+  text-shadow: 1em .5em .5em rgba(0, 0, 0, 0.784);
+}
+
+.heading {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+
 }
 
 .App-container {
-  display:block;
+  display:inline-block;
+  background: rgb(144, 192, 183);
+  padding: 30px;
+  border-radius: .5em;
+  box-shadow: 1em .5em .5em rgba(0, 0, 0, 0.515);;
 }
 
 .App-list {
-  background-color: #103c49;
-  text-align: center;
+  outline:auto rgb(62, 62, 245);
+  margin: 1em;
+  background: #103c49;
   color: rgb(255, 255, 249);
+  border-radius: .5em;
+  padding: .5em;
+  max-width: 400px;
+  font-size: 1.2em;
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.515);;
+
+}
+.App-input {
+  border-radius: .5em;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(144, 255, 40);
+  color: rgb(12, 8, 8);
+  margin: 1em;
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.515);;
+
 }
 
 .App {
